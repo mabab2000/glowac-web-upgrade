@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Acme Co — Reliable engineering and consulting services.">
+  <title>Glowac - Official website</title>
+  <!-- Use logo.png as favicon -->
+  <link rel="icon" type="image/png" href="logo.png">
+  <script src="./script.js"></script>
+  <!-- Google Fonts -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-<correct-hash>" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-p6O1r6m0Xb3z2e2s1f2eYh1z1y2Kq6g1k3Zq1eXb1Q5Y3f2Z1v3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../nav.css">
+</head>
+<body>
+  <div class="banner-bg">
+    <!-- Animated text in front of banner image -->
+    <div class="animated-banner-text">
+      <span class="typewriter">Contact us</span>
+    </div>
+    <header>
+      <div class="container nav">
+        <div class="logo">
+          <img src="logo.png" alt="Acme Co logo" style="border-radius:0px;height:62px;width:120px;object-fit:cover">
+        </div>
+       <button class="hamburger" id="navToggle" aria-label="Toggle navigation">
+  <span></span>
+  <span></span>
+  <span></span>
+</button>
+       <nav class="nav-links" id="navLinks">
+  <a href="#home">Home</a>
+  <div class="dropdown">
+  <a href="#services" class="dropbtn">Services</a>
+  <div class="dropdown-content">
+    <div class="dropdown-sub">
+      <a href="#service1-1"> < Geotechnical</a>
+      <div class="dropdown-content-sub">
+        <a href="#service1-1-1">Soil Testing</a>
+        <a href="#service1-1-2">Cement Testing</a>
+         <a href="#service1-1-2">Aggregate and Concrete Testing</a>
+          <a href="#service1-1-2">Water Testing</a>
+      </div>
+    </div>
+     <!-- <div class="dropdown-sub">
+      <a href="#service1-1">< Service 1</a>
+      <div class="dropdown-content-sub">
+        <a href="#service1-1-1">1.1.1 Service 1</a>
+        <a href="#service1-1-2">1.1.2 Service 2</a>
+      </div>
+    </div> -->
+    <a href="#service1-2" style="font-weight: 900;">Topographical Survey Service</a>
+    <a href="#service1-3" style="font-weight: 900;">Environmental Impact Assessment</a>
+  </div>
+</div>
+  <a href="#about">About</a>
+  <a href="#contact">Contact</a>
+</nav>
+      </div>
+    </header>
+  </div>
+  
+<main class="container">
+    <!-- HERO -->
+    <section class="hero" aria-label="Contact Us">
+        <div class="contact-info">
+          
+            <p class="muted">Get in touch with us for any inquiries or assistance.</p>
+        </div>
+
+        <!-- Flex Container for Map and Working Days -->
+        <div class="flex-container">
+            <!-- Map Section -->
+            <div class="map-container">
+                <div id="map" style="width: 100%; height: 400px;">
+                    <!-- Live map will be embedded here -->
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.8354345093454!2d144.9537353153163!3d-37.81627997975145!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11b3c1%3A0x5045675218ceed30!2sYour%20Location!5e0!3m2!1sen!2sau!4v1633038662034!5m2!1sen!2sau" 
+                        width="100%" 
+                        height="400" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy">
+                    </iframe>
+                </div>
+            </div>
+
+            <!-- Working Days Table -->
+            <div class="working-days">
+                
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Day</th>
+                            <th>Hours</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Monday</td>
+                            <td>9:00 AM - 5:00 PM</td>
+                        </tr>
+                        <tr>
+                            <td>Tuesday</td>
+                            <td>9:00 AM - 5:00 PM</td>
+                        </tr>
+                        <tr>
+                            <td>Wednesday</td>
+                            <td>9:00 AM - 5:00 PM</td>
+                        </tr>
+                        <tr>
+                            <td>Thursday</td>
+                            <td>9:00 AM - 5:00 PM</td>
+                        </tr>
+                        <tr>
+                            <td>Friday</td>
+                            <td>9:00 AM - 5:00 PM</td>
+                        </tr>
+                        <tr>
+                            <td>Saturday</td>
+                            <td>Closed</td>
+                        </tr>
+                        <tr>
+                            <td>Sunday</td>
+                            <td>Closed</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+</main>
+
+
+   
+
+
+    </main>
+ <footer>
+    <div class="container">
+        <div class="footer-grid">
+            <!-- Services List -->
+            <div class="services-list" style="min-width:220px">
+                <h4>Our Services</h4>
+                <ul class="muted">
+                    <li>Consulting</li>
+                    <li>Engineering Solutions</li>
+                    <li>Project Management</li>
+                    <li>Technical Support</li>
+                </ul>
+            </div>
+
+            <!-- Contact List -->
+            <div class="contact-list" style="min-width:220px">
+                <h4>Contact Us</h4>
+                <p class="muted" style="margin:0.2rem 0">
+                    <i class="fa-solid fa-phone"></i> 
+                    <a href="tel:+1234567890">+1 (234) 567-890</a>
+                </p>
+                <p class="muted" style="margin:0.2rem 0">
+                    <i class="fa-solid fa-envelope"></i> 
+                    <a href="mailto:info@acmeco.com">info@acmeco.com</a>
+                </p>
+            </div>
+
+            <!-- Follow Us Section -->
+            <div class="follow-us" style="min-width:220px">
+                <h4>Follow Us</h4>
+                <p class="muted" style="margin:0.2rem 0">
+                    <a href="#" aria-label="Twitter"><i class="fa-brands fa-twitter"></i> Twitter</a> · 
+                    <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+                </p>
+            </div>
+        </div>
+
+        <!-- Chat Icon -->
+        <div class="chat-icon" onclick="openChatModal()">
+            <i class="fa-solid fa-comments"></i>
+        </div>
+
+        <!-- Chat Modal -->
+        <div id="chatModal" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeChatModal()">&times;</span>
+                <h2>Chat with Us</h2>
+                <textarea id="chatMessage" placeholder="Type your message here..."></textarea>
+                <button onclick="sendMessage()">Send via WhatsApp</button>
+            </div>
+        </div>
+
+        <div style="text-align:center;margin-top:1rem;color:#111111;font-size:.95rem">
+            &copy; 2025 Glowac — All rights reserved
+        </div>
+    </div>
+</footer>
+
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+  // Hamburger menu
+  const navToggle = document.getElementById('navToggle');
+  const navLinks = document.getElementById('navLinks');
+  if(navToggle && navLinks) {
+    navToggle.addEventListener('click', function() {
+      navLinks.classList.toggle('show');
+    });
+  }
+
+  // Dropdown submenus for mobile
+  if (window.innerWidth <= 700) {
+    document.querySelectorAll('.dropdown-sub > a').forEach(function(link) {
+      link.addEventListener('click', function(e) {
+        e.preventDefault();
+        const parent = this.parentElement;
+        parent.classList.toggle('open');
+      });
+    });
+  }
+});function openChatModal() {
+    document.getElementById("chatModal").style.display = "block";
+}
+
+function closeChatModal() {
+    document.getElementById("chatModal").style.display = "none";
+}
+
+function sendMessage() {
+    const message = document.getElementById("chatMessage").value;
+    const phoneNumber = "1234567890"; // Replace with your WhatsApp number
+    const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+    window.open(whatsappUrl, '_blank');
+    closeChatModal(); // Close the modal after sending
+}
+</script>
+</body>
+</html>

@@ -36,7 +36,9 @@
     flex-direction: column; /* Stack items vertically */
     padding: 10px 0; /* Padding for dropdown */
 }
-
+.dropdown-content-sub a{
+    color: #0d9488;
+}
 .dropdown:hover .dropdown-content {
     display: flex; /* Show dropdown on hover */
 }
@@ -44,7 +46,7 @@
 /* Styles for dropdown links */
 .dropdown-content a {
     padding: 8px 15px; /* Padding for dropdown items */
-    color: var(--dark);
+    color: var(--accent);
     font-weight: 600; /* Slightly bolder */
     white-space: nowrap; /* Prevent text wrapping */
 }
