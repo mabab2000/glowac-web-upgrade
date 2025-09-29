@@ -1,0 +1,80 @@
+/* Base styles for nav-links */
+.nav-links {
+    display: flex; /* Default to flex for desktop */
+    align-items: center;
+    gap: 1rem; /* Space between links */
+}
+
+/* Styles for individual links */
+.nav-links a {
+    color: var(--accent);
+    font-weight: 700; /* Regular weight */
+    text-decoration: none;
+    padding: 10px 15px; /* Padding for clickable area */
+    border-radius: 4px; /* Rounded corners */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transitions */
+}
+
+/* Hover effect for links */
+.nav-links a:hover {
+    background-color: rgba(13, 148, 136, 0.1); /* Light background on hover */
+    color: var(--dark); /* Darker text on hover */
+}
+
+/* Dropdown styles */
+.dropdown {
+    position: relative; /* Positioning for dropdown */
+}
+
+.dropdown-content {
+    display: none; /* Hidden by default */
+    position: absolute; /* Positioning below the dropdown button */
+    background-color: #fff; /* Background color */
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1); /* Shadow for dropdown */
+    border-radius: 4px; /* Rounded corners */
+    z-index: 1000; /* Ensure it is above other content */
+    flex-direction: column; /* Stack items vertically */
+    padding: 10px 0; /* Padding for dropdown */
+}
+
+.dropdown:hover .dropdown-content {
+    display: flex; /* Show dropdown on hover */
+}
+
+/* Styles for dropdown links */
+.dropdown-content a {
+    padding: 8px 15px; /* Padding for dropdown items */
+    color: var(--dark);
+    font-weight: 600; /* Slightly bolder */
+    white-space: nowrap; /* Prevent text wrapping */
+}
+
+/* Hover effect for dropdown links */
+.dropdown-content a:hover {
+    background-color: rgba(13, 148, 136, 0.1); /* Light background on hover */
+}
+
+/* Mobile styles */
+@media (max-width: 700px) {
+    .nav-links {
+        flex-direction: column; /* Stack links vertically */
+        display: none; /* Initially hidden */
+        position: absolute; /* Overlay on the screen */
+        top: 60px; /* Adjust based on header height */
+        left: 0;
+        right: 0;
+        background: #fff; /* Background color */
+        padding: 1rem; /* Padding for the menu */
+        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1); /* Shadow for dropdown */
+        border-radius: 0 0 12px 12px; /* Rounded bottom corners */
+        z-index: 1000; /* Ensure it is above other content */
+    }
+
+    .nav-links.show {
+        display: flex; /* Show when toggled */
+    }
+
+    .dropdown-content {
+        position: relative; /* Positioning for mobile */
+    }
+}

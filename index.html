@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Acme Co — Reliable engineering and consulting services.">
+  <title>Glowac - Official website</title>
+  <!-- Use logo.png as favicon -->
+  <link rel="icon" type="image/png" href="logo.png">
+ 
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-p6O1r6m0Xb3z2e2s1f2eYh1z1y2Kq6g1k3Zq1eXb1Q5Y3f2Z1v3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="nav.css">
+</head>
+<body>
+  <div class="banner-bg">
+    <!-- Animated text in front of banner image -->
+    <div class="animated-banner-text">
+      <span class="typewriter">GLOWAC</span>
+    </div>
+    <header>
+      <div class="container nav">
+        <div class="logo">
+          <img src="logo.png" alt="Acme Co logo" style="border-radius:0px;height:62px;width:120px;object-fit:cover">
+        </div>
+       <button class="hamburger" id="navToggle" aria-label="Toggle navigation">
+  <span></span>
+  <span></span>
+  <span></span>
+</button>
+       <nav class="nav-links" id="navLinks">
+  <a href="#home">Home</a>
+  <div class="dropdown">
+  <a href="#services" class="dropbtn">Services</a>
+  <div class="dropdown-content">
+    <div class="dropdown-sub">
+      <a href="#service1-1"> < Geotechnical</a>
+      <div class="dropdown-content-sub">
+        <a href="#service1-1-1">Soil Testing</a>
+        <a href="#service1-1-2">Cement Testing</a>
+         <a href="#service1-1-2">Aggregate and Concrete Testing</a>
+          <a href="#service1-1-2">Water Testing</a>
+      </div>
+    </div>
+    
+    <a href="#service1-2" style="font-weight: 900;">Topographical Survey Service</a>
+    <a href="#service1-3" style="font-weight: 900;">Environmental Impact Assessment</a>
+  </div>
+</div>
+  <a href="#about">About</a>
+  <a href="#contact">Contact</a>
+</nav>
+      </div>
+    </header>
+  </div>
+  
+  <main class="container">
+    <!-- HERO -->
+    <section class="hero" aria-label="Intro">
+      <div>
+        <p class="muted" style="font-weight:600">Reliable engineering &amp; consulting</p>
+        <h1>Geotechnical and concrete services</h1>
+        <p class="muted" style="font-size: 1.3rem;text-align: justify;">GLOWAC Laboratory provides laboratory testing of soil, rock, concrete and other materials for site characterization, geotechnical design, quality control and performance assessment purposes. Geotechnical investigations are performed to obtain information on the physical properties of soil earthworks and foundations for proposed structures.</p>
+
+        <div style="margin-top:1.6rem;display:flex;gap:1rem;flex-wrap:wrap">
+          <div class="card" style="display:flex;gap:.8rem;align-items:center;padding:.6rem .8rem;min-width:170px">
+            <div style="font-size:1.6rem;color:var(--accent)"><i class="fa-solid fa-building-circle-check"></i></div>
+            <div>
+              <div style="font-weight:600">+10 years</div>
+              <div class="muted" style="font-size:.9rem">Industry experience</div>
+            </div>
+          </div>
+
+          <div class="card" style="display:flex;gap:.8rem;align-items:center;padding:.6rem .8rem;min-width:170px">
+            <div style="font-size:1.6rem;color:var(--accent)"><i class="fa-solid fa-award"></i></div>
+            <div>
+              <div style="font-weight:600">ISO 9001</div>
+              <div class="muted" style="font-size:.9rem">Quality management</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <aside class="card">
+        <h3>Background</h3>
+        <p class="muted">About Glowac</p>
+       <p style="font-size: 1.1rem;text-align:justify;"> GLOWAC Laboratory provides laboratory testing of soil, rock, concrete and other materials for site characterization, geotechnical design, quality control and performance assessment purposes. Geotechnical investigations are performed to obtain information on the physical properties of soil earthworks and foundations for proposed structures. Our goal is to provide our clients with fast turnaround and accurate test results. Output from laboratory tests are individually reviewed by geotechnical engineering staff.</p>
+      </aside>
+    </section>
+
+    <!-- SERVICES -->
+    <section id="services">
+      <h2>Our Services</h2>
+      <p class="muted">We offer a range of technical services to support construction and infrastructure projects.</p>
+
+      <div class="grid" style="margin-top:1rem">
+       <article class="card">
+  <div style="margin-bottom:.5rem;display:flex;justify-content:center;">
+    <img src="service.png" alt="Geotechnical Investigations" style="height:100px;width:100px;object-fit:contain;">
+  </div>
+  <h3>Geotechnical Investigations</h3>
+  <p class="muted">Soil testing, borehole logging, foundation recommendations and site investigation reports.</p>
+</article>
+        <article class="card">
+          <div style="font-size:2rem;display:flex;color:var(--accent);margin-bottom:.5rem;justify-content:center;">
+           <img src="service.png" alt="Geotechnical Investigations" style="height:100px;width:100px;object-fit:contain;">
+          </div>
+          <h3>Structural Design</h3>
+          <p class="muted">Design of reinforced concrete and steel structures, detailing and peer reviews.</p>
+        </article>
+        <article class="card">
+          <div style="font-size:2rem;display:flex;color:var(--accent);margin-bottom:.5rem;justify-content:center;">
+            <img src="service.png" alt="Geotechnical Investigations" style="height:100px;width:100px;object-fit:contain;">
+          </div>
+          <h3>Construction Management</h3>
+          <p class="muted">Project supervision, quality assurance and progress reporting.</p>
+        </article>
+        <article class="card">
+          <div style="font-size:2rem;display:flex;color:var(--accent);margin-bottom:.5rem;justify-content:center;">
+            <img src="service.png" alt="Geotechnical Investigations" style="height:100px;width:100px;object-fit:contain;">
+          </div>
+          <h3>Material Testing</h3>
+          <p class="muted">Lab testing for aggregates, concrete, asphalt and specialized materials.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about">
+      <h2>About Glowac</h2>
+      <div class="grid" style="align-items:center">
+        <div>
+          <p class="muted">Acme Co is a regional engineering and consulting firm focused on delivering durable and cost-effective solutions. Our multidisciplinary team works closely with clients from conceptual design through to construction completion.</p>
+          <ul class="muted">
+            <li>Experienced engineers and lab technicians</li>
+            <li>Independent, evidence-based recommendations</li>
+            <li>Commitment to safety and sustainability</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Why choose us?</h3>
+          <p class="muted">We combine local knowledge with international best practices and provide clear, documented advice you can act on.</p>
+          <p><a href="#contact" class="btn">Request Proposal</a></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact">
+      <h2>Contact Us</h2>
+      <p class="muted">Get in touch — we'd love to hear about your project.</p>
+
+      <div class="grid" style="margin-top:1rem;align-items:start">
+        <div class="card">
+          <h3>Office</h3>
+          <p class="muted">Kigali, Rwanda<br>24 KG 607 St</p>
+          <p class="muted">Phone: +250 787 100 805<br>Email: info@acmeco.example</p>
+          <p><a href="#" class="muted">View map</a></p>
+        </div>
+
+        <form class="card" style="padding:.8rem" onsubmit="event.preventDefault();alert('Message sent — thank you!')">
+          <label class="muted">Your name</label>
+          <input required placeholder="Full name">
+          <label class="muted" style="margin-top:.6rem">Email</label>
+          <input type="email" required placeholder="you@company.com">
+          <label class="muted" style="margin-top:.6rem">Message</label>
+          <textarea rows="4" placeholder="Tell us about your project"></textarea>
+          <button class="btn" style="margin-top:.6rem">Send message</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div style="min-width:220px">
+          <strong>Acme Co</strong>
+          <p class="muted" style="margin-top:.4rem">Engineering & Consulting — delivering practical solutions since 2015.</p>
+        </div>
+
+        <div style="min-width:180px">
+          <h4 style="margin:0 0 .4rem">Quick links</h4>
+          <nav class="muted" style="display:flex;flex-direction:column;gap:.4rem">
+            <a href="#services">Services</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+          </nav>
+        </div>
+
+        <div style="min-width:220px">
+          <h4 style="margin:0 0 .4rem">Follow</h4>
+          <p class="muted" style="margin:0.2rem 0"><a href="#" aria-label="Twitter"><i class="fa-brands fa-twitter"></i> Twitter</a> · <a href="#"><i class="fa-brands fa-linkedin"></i> LinkedIn</a></p>
+        </div>
+      </div>
+
+      <div style="text-align:center;margin-top:1rem;color:#111111;font-size:.95rem">&copy; 2025 Glowac — All rights reserved</div>
+    </div>
+  </footer>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  // Hamburger menu
+  const navToggle = document.getElementById('navToggle');
+  const navLinks = document.getElementById('navLinks');
+  if(navToggle && navLinks) {
+    navToggle.addEventListener('click', function() {
+      navLinks.classList.toggle('show');
+    });
+  }
+
+  // Dropdown submenus for mobile
+  if (window.innerWidth <= 700) {
+    document.querySelectorAll('.dropdown-sub > a').forEach(function(link) {
+      link.addEventListener('click', function(e) {
+        e.preventDefault();
+        const parent = this.parentElement;
+        parent.classList.toggle('open');
+      });
+    });
+  }
+});</script
+</body>
+</html>

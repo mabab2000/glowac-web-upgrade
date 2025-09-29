@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Acme Co — Reliable engineering and consulting services.">
+  <title>Glowac - Official website</title>
+  <!-- Use logo.png as favicon -->
+  <link rel="icon" type="image/png" href="logo.png">
+  <script src="./script.js"></script>
+  <!-- Google Fonts -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-<correct-hash>" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-p6O1r6m0Xb3z2e2s1f2eYh1z1y2Kq6g1k3Zq1eXb1Q5Y3f2Z1v3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../nav.css">
+</head>
+<body>
+  <div class="banner-bg">
+    <!-- Animated text in front of banner image -->
+    <div class="animated-banner-text">
+      <span class="typewriter">Our Team</span>
+    </div>
+    <header>
+      <div class="container nav">
+        <div class="logo">
+          <img src="logo.png" alt="Acme Co logo" style="border-radius:0px;height:62px;width:120px;object-fit:cover">
+        </div>
+       <button class="hamburger" id="navToggle" aria-label="Toggle navigation">
+  <span></span>
+  <span></span>
+  <span></span>
+</button>
+       <nav class="nav-links" id="navLinks">
+  <a href="#home">Home</a>
+  <div class="dropdown">
+  <a href="#services" class="dropbtn">Services</a>
+  <div class="dropdown-content">
+    <div class="dropdown-sub">
+      <a href="#service1-1"> < Geotechnical</a>
+      <div class="dropdown-content-sub">
+        <a href="#service1-1-1">Soil Testing</a>
+        <a href="#service1-1-2">Cement Testing</a>
+         <a href="#service1-1-2">Aggregate and Concrete Testing</a>
+          <a href="#service1-1-2">Water Testing</a>
+      </div>
+    </div>
+     <!-- <div class="dropdown-sub">
+      <a href="#service1-1">< Service 1</a>
+      <div class="dropdown-content-sub">
+        <a href="#service1-1-1">1.1.1 Service 1</a>
+        <a href="#service1-1-2">1.1.2 Service 2</a>
+      </div>
+    </div> -->
+    <a href="#service1-2" style="font-weight: 900;">Topographical Survey Service</a>
+    <a href="#service1-3" style="font-weight: 900;">Environmental Impact Assessment</a>
+  </div>
+</div>
+  <a href="#about">About</a>
+  <a href="#contact">Contact</a>
+</nav>
+      </div>
+    </header>
+  </div>
+  
+  <main class="container">
+    <!-- HERO -->
+    <section class="hero" aria-label="Intro">
+      <div>
+        <p class="muted" style="font-weight:600">Reliable engineering &amp; consulting</p>
+        <h1>Geotechnical and concrete services</h1>
+        <p class="muted">GLOWAC Laboratory provides laboratory testing of soil, rock, concrete and other materials for site characterization, geotechnical design, quality control and performance assessment purposes. Geotechnical investigations are performed to obtain information on the physical properties of soil earthworks and foundations for proposed structures.</p>
+
+        <div style="margin-top:1.6rem;display:flex;gap:1rem;flex-wrap:wrap">
+          <div class="card" style="display:flex;gap:.8rem;align-items:center;padding:.6rem .8rem;min-width:170px">
+            <div style="font-size:1.6rem;color:var(--accent)"><i class="fa-solid fa-building-circle-check"></i></div>
+            <div>
+              <div style="font-weight:600">+10 years</div>
+              <div class="muted" style="font-size:.9rem">Industry experience</div>
+            </div>
+          </div>
+
+          <div class="card" style="display:flex;gap:.8rem;align-items:center;padding:.6rem .8rem;min-width:170px">
+            <div style="font-size:1.6rem;color:var(--accent)"><i class="fa-solid fa-award"></i></div>
+            <div>
+              <div style="font-weight:600">ISO 9001</div>
+              <div class="muted" style="font-size:.9rem">Quality management</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <aside class="card">
+        <div>
+        
+        <div><p class="muted"style="font-size: 2.2rem;font-weight:900;">CEO</p></div>
+        <div><h3>TUYISENGE INNOCENT</h3></div>
+       <img src="cust1.png" alt="Customer 1" style="height: 300px;;width:300px;object-fit:cover;margin-top:.8rem;border-radius:50%">
+       </div>
+      </aside>
+    </section>
+
+    <!-- SERVICES -->
+    <section id="team">
+  <div class="grid" style="margin-top:1rem;">
+   
+
+    <article class="team-member cardd" style="text-align: center;">
+      <img src="ceo1.png" alt="Team Member 2" style="height:150px;width:150px;object-fit:cover;border-radius:50%;">
+      <h3>JOHN DOE</h3>
+      <span class="muted" style="font-weight: 600;">Project Manager</span><br>
+      <a href="mailto:john@example.com">john@example.com</a><br>
+     <a href="tel:+1987654321">+1 987 654 321</a>
+    </article>
+     <article class="team-member cardd" style="text-align: center;">
+      <img src="ceo1.png" alt="Team Member 2" style="height:150px;width:150px;object-fit:cover;border-radius:50%;">
+      <h3>JOHN DOE</h3>
+      <span class="muted" style="font-weight: 600;">Project Manager</span><br>
+      <a href="mailto:john@example.com">john@example.com</a><br>
+     <a href="tel:+1987654321">+1 987 654 321</a>
+    </article>
+     
+  </div>
+</section>
+
+
+    </main>
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div style="min-width:220px">
+          <strong>Acme Co</strong>
+          <p class="muted" style="margin-top:.4rem">Engineering & Consulting — delivering practical solutions since 2015.</p>
+        </div>
+
+        <div style="min-width:180px">
+          <h4 style="margin:0 0 .4rem">Quick links</h4>
+          <nav class="muted" style="display:flex;flex-direction:column;gap:.4rem">
+            <a href="#services">Services</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+          </nav>
+        </div>
+
+        <div style="min-width:220px">
+          <h4 style="margin:0 0 .4rem">Follow</h4>
+          <p class="muted" style="margin:0.2rem 0"><a href="#" aria-label="Twitter"><i class="fa-brands fa-twitter"></i> Twitter</a> · <a href="#"><i class="fa-brands fa-linkedin"></i> LinkedIn</a></p>
+        </div>
+      </div>
+
+      <div style="text-align:center;margin-top:1rem;color:#111111;font-size:.95rem">&copy; 2025 Glowac — All rights reserved</div>
+    </div>
+  </footer>
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+  // Hamburger menu
+  const navToggle = document.getElementById('navToggle');
+  const navLinks = document.getElementById('navLinks');
+  if(navToggle && navLinks) {
+    navToggle.addEventListener('click', function() {
+      navLinks.classList.toggle('show');
+    });
+  }
+
+  // Dropdown submenus for mobile
+  if (window.innerWidth <= 700) {
+    document.querySelectorAll('.dropdown-sub > a').forEach(function(link) {
+      link.addEventListener('click', function(e) {
+        e.preventDefault();
+        const parent = this.parentElement;
+        parent.classList.toggle('open');
+      });
+    });
+  }
+});</script>
+</body>
+</html>
